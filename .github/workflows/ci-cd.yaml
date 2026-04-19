@@ -23,7 +23,7 @@ jobs:
         run: |
           docker login -u "${{ secrets.SWR_USERNAME }}" \
                       -p "${{ secrets.SWR_PASSWORD }}" \
-                      "$SWR_DOMAIN
+                      $SWR_DOMAIN
 
       - name: Build Docker image
         run: |
